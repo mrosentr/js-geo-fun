@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>GeoLocation Demo</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row" style="margin-top: 15%">
+      <h4><center>JavaScript Geo Location Demo</center></h4>
+      <p>This demo will ask you for your location and display information on the screen</p>
+    </div>
+    <div class="row">
+      <div class="one-half column">
+        <p><button onclick="geoFindMe()">Show my location</button></p>
+        <p><div id="out"></div></p>
+      </div>
+      <div class="one-half column">
+        <p><button onclick="ipInfoMe()">Show my IP info</button></p>
+        <p><div id="ip"></div></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!-- JavaScript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript"> var userip;</script>
+  <script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script>
+  <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+  <script type="text/javascript" src="js/geo.js"></script>
+  <script type="text/javascript" src="js/ip.js"></script>
+
+</body>
+</html>
